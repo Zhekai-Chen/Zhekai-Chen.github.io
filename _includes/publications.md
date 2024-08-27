@@ -1,4 +1,5 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+<br>
 <p style="margin: 2px 0px -15px;">(* equal contribution)</p>
 
 <div class="publications">
