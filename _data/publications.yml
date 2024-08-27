@@ -1,22 +1,32 @@
 main:
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+  - title: "FreeCompose: Generic Zero-Shot Image Composition with Diffusion Prior"
+    authors: <strong>Zhekai Chen*</strong>, Wen Wang*, Zhen Yang, Zeqing Yuan, Hao Chen, Chunhua Shen
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
+    arxiv: https://arxiv.org/abs/2407.04947
+    pdf: https://arxiv.org/pdf/2407.04947
+    code: https://github.com/aim-uofa/FreeCompose
+    image: ./assets/img/free_compose.png
+    notes: Accepted
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+  - title: "AutoStory: Generating Diverse Storytelling Images with Minimal Human Effort"
+    authors: Wen Wang*, Canyu Zhao*, Hao Chen, <strong>Zhekai Chen</strong>, Kecheng Zheng, Chunhua Shen
+    conference_short: IJCV
+    conference: International Journal of Computer Vision
+    arxiv: https://arxiv.org/abs/2311.11243
+    pdf: https://arxiv.org/pdf/2311.11243
+    code: https://github.com/aim-uofa/AutoStory
+    page: https://aim-uofa.github.io/AutoStory/
+    notes: Under review
+    image: ./assets/img/autostory.png
+
+  - title: "Image Textualization: An Automatic Framework for Creating Accurate and Detailed Image Descriptions"
+    authors: Renjie Pi*, Jianshu Zhang*, Jipeng Zhang, Rui Pan, <strong>Zhekai Chen</strong>, Tong Zhang
+    conference_short: NeurIPS
+    conference: Conference on Neural Information Processing Systems, 2025
+    arxiv: https://arxiv.org/abs/2406.07502
+    pdf: https://arxiv.org/pdf/2406.07502
+    code: https://github.com/sterzhang/image-textualization
+    notes: Under review
+    image: ./assets/img/image_textualization.png
