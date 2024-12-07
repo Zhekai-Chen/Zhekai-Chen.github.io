@@ -33,5 +33,3 @@ I aim to empower individuals to express creativity effortlessly, eliminating the
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/services.md %}
-
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ORZ-ZG5zgkwCvC6sXW8YtYnIB-NltGr56bnIDBNzvmg"></script>
