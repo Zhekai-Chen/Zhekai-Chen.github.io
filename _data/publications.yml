@@ -3,12 +3,12 @@ main:
   - title: "FreeCompose: Generic Zero-Shot Image Composition with Diffusion Prior"
     authors: <strong>Zhekai Chen*</strong>, Wen Wang*, Zhen Yang, Zeqing Yuan, Hao Chen, Chunhua Shen
     conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
+    conference: European Conference on Computer Vision, 2024.
     arxiv: https://arxiv.org/abs/2407.04947
     pdf: https://arxiv.org/pdf/2407.04947
     code: https://github.com/aim-uofa/FreeCompose
-    image: ./assets/img/free_compose.png
-    notes: Accepted
+    image: ./assets/img/pulications/free_compose.png
+    notes: Published
 
   - title: "AutoStory: Generating Diverse Storytelling Images with Minimal Human Effort"
     authors: Wen Wang*, Canyu Zhao*, Hao Chen, <strong>Zhekai Chen</strong>, Kecheng Zheng, Chunhua Shen
@@ -19,7 +19,18 @@ main:
     code: https://github.com/aim-uofa/AutoStory
     page: https://aim-uofa.github.io/AutoStory/
     notes: Under review
-    image: ./assets/img/autostory.png
+    image: ./assets/img/pulications/autostory.png
+
+  - title: "Framer: Interactive Frame Interpolation"
+    authors: Wen Wang, Qiuyu Wang, Kecheng Zheng, Hao Ouyang, <strong>Zhekai Chen</strong>, Biao Gong, Hao Chen, Yujun Shen, Chunhua Shen
+    conference_short: ICLR
+    conference: International Conference on Learning Representations, 2025
+    arxiv: https://arxiv.org/abs/2410.18978
+    pdf: https://arxiv.org/pdf/2410.18978
+    code: https://github.com/aim-uofa/Framer
+    page: https://aim-uofa.github.io/Framer/
+    notes: Under review
+    image: ./assets/img/pulications/framer.png
 
   - title: "Image Textualization: An Automatic Framework for Creating Accurate and Detailed Image Descriptions"
     authors: Renjie Pi*, Jianshu Zhang*, Jipeng Zhang, Rui Pan, <strong>Zhekai Chen</strong>, Tong Zhang
@@ -28,5 +39,5 @@ main:
     arxiv: https://arxiv.org/abs/2406.07502
     pdf: https://arxiv.org/pdf/2406.07502
     code: https://github.com/sterzhang/image-textualization
-    notes: Under review
-    image: ./assets/img/image_textualization.png
+    notes: Accepted
+    image: ./assets/img/pulications/image_textualization.png
