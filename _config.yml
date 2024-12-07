@@ -15,8 +15,8 @@ canonical: https://minimal-light-theme.yliu.me/
 google_scholar: https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=zh-CN
 cv_link: assets/files/Resume.pdf
 github_link: https://github.com/Zhekai-Chen
-# linkedin: https://www.linkedin.com/
-# twitter: https://twitter.com/
+linkedin: https://www.linkedin.com/in/%E5%93%B2%E6%81%BA-%E9%99%88-7352b827a/
+twitter: https://x.com/ChenZhekai3003
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
@@ -54,4 +54,3 @@ exclude:
   - README_de.md
   - LICENSE
   - minimal-light.gemspec
-  - html_source_file/
