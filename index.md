@@ -36,4 +36,4 @@ I aim to empower individuals to express creativity effortlessly, eliminating the
 
 ## Scholarships & Awards
 
-- 2023-2024 **Ho Chi Kwan Education Fund Student Awards** (7 every year in ZJU CS Department)
+- 2023-2024 **Ho Chi Kwan Education Scholarship** (7 every year in ZJU CS Department)
