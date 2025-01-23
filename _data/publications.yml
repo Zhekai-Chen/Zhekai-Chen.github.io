@@ -18,7 +18,7 @@ main:
     pdf: https://arxiv.org/pdf/2311.11243
     code: https://github.com/aim-uofa/AutoStory
     page: https://aim-uofa.github.io/AutoStory/
-    notes: Accepted
+    notes: Published
     image: ./assets/img/pulications/autostory.png
 
   - title: "Framer: Interactive Frame Interpolation"
@@ -29,7 +29,7 @@ main:
     pdf: https://arxiv.org/pdf/2410.18978
     code: https://github.com/aim-uofa/Framer
     page: https://aim-uofa.github.io/Framer/
-    notes: Under review
+    notes: Accepted
     image: ./assets/img/pulications/framer.png
 
   - title: "Image Textualization: An Automatic Framework for Creating Accurate and Detailed Image Descriptions"
