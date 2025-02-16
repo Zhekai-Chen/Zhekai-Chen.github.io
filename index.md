@@ -11,7 +11,7 @@ I aim to empower individuals to express creativity effortlessly, eliminating the
 2. Advancing LLM/MLLM Capabilities: Bridging human intent and machine interpretation, transforming thoughts into actionable outputs.
 3. Enhancing Human-Computer Interaction: Making communication with AI more natural and intuitive, utilizing physical media without complex operations.
 
-**I am seeking PhD opportunities for Fall 2025. If you are interested, please contact me if you are interested.**
+**I am seeking PhD opportunities for Fall 2025. If you are interested, please contact me.**
 
 ## Education
 
