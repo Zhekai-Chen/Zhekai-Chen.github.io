@@ -11,11 +11,9 @@ I aim to empower individuals to express creativity effortlessly, eliminating the
 2. Advancing LLM/MLLM Capabilities: Bridging human intent and machine interpretation, transforming thoughts into actionable outputs.
 3. Enhancing Human-Computer Interaction: Making communication with AI more natural and intuitive, utilizing physical media without complex operations.
 
-**I am seeking PhD opportunities for Fall 2025. If you are interested, please contact me.**
-
 ## Education
 
-- <img src="assets/img/eduction/zhejiang_university.png" alt="Zhejiang University Icon" style="width: 20px; height: 20px; margin-right: 2px;"> **Zhejiang University**, B.Eng. in Computer Science and Technology, 2021 - 2025 (expected)
+- <img src="assets/img/eduction/zhejiang_university.png" alt="Zhejiang University Icon" style="width: 20px; height: 20px; margin-right: 2px;"> **Zhejiang University**, B.Eng. in Computer Science and Technology, 2021 - 2025
 - <img src="assets/img/eduction/suzhou_academy.png" alt="Suzhou Academy Icon" style="width: 20px; height: 20px; margin-right: 2px;"> **Suzhou Academy**, High School, 2018 - 2021
 
 ## Current Research Interests
