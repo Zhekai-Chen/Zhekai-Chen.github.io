@@ -2,4 +2,5 @@ _site/
 push.sh
 .DS_Store
 .bundle/
-vendor/
+/vendor/
+Gemfile.lock
