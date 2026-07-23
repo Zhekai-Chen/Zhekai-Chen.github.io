@@ -10,17 +10,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a Ph.D. student in **Electrical and Computer Engineering** at **The University of Hong Kong**, advised by Prof. [Xihui Liu](https://xh-liu.github.io/) at **HKU MMLab**. I received my B.Eng. from **Zhejiang University**, where I worked with Prof. [Chunhua Shen](https://cshen.github.io/)'s group at the State Key Laboratory of CAD&CG.
+I am a Ph.D. student in **Electrical and Computer Engineering** at **The University of Hong Kong**, advised by Prof. [Xihui Liu](https://xh-liu.github.io/) at **HKU MMLab**. I received my B.Eng. from **Zhejiang University**, where I worked with Prof. [Chunhua Shen](https://cshen.github.io/) and Prof. [Hao Chen](https://stan-haochen.github.io/) at the State Key Laboratory of CAD&CG.
 
 My research interests lie in **generative models**, **unified multimodal models**, and **agents**. I am particularly interested in scalable visual generation, long-context multimodal learning, and generalist agents that can perceive, reason, and act in real-world environments.
 
-I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Previously, I worked at **Meituan** with **Manyuan Zhang** as my mentor, and at **Alibaba Tongyi Wan**, where **Ruihang Chu** mentored me on video generation research.
+I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Previously, I worked at **Meituan** with [**Manyuan Zhang**](https://manyuan97.github.io/) as my mentor, and at **Alibaba Tongyi Wan**, where [**Ruihang Chu**](https://scholar.google.com/citations?hl=en&user=62zPPxkAAAAJ) mentored me on video generation research.
 
-<div class="profile-actions">
-  <a class="profile-action" href="resume/Zhekai_Chen_CV.pdf"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
-  <a class="profile-action" href="https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a class="profile-action" href="https://github.com/Zhekai-Chen"><i class="fab fa-github"></i> GitHub</a>
-</div>
+
 
 # 🔥 News
 
@@ -183,11 +179,11 @@ Wen Wang<sup>*</sup>, Canyu Zhao<sup>*</sup>, Hao Chen, **<u>Zhekai Chen</u>**, 
     </div>
     <div class="journey-row">
       <div></div><div class="journey-axis"><span>2026</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/meituan.webp" alt="Meituan logo"></div><div><span class="journey-date">Nov. 2025 – Jun. 2026</span><h3>Meituan</h3><p>Unified multimodal models · <small>Mentor: Manyuan Zhang</small></p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/meituan.webp" alt="Meituan logo"></div><div><span class="journey-date">Nov. 2025 – Jun. 2026</span><h3>Meituan</h3><p>Unified multimodal models · <small>Mentor: <a href="https://manyuan97.github.io/">Manyuan Zhang</a></small></p></div></article>
     </div>
     <div class="journey-row">
       <div></div><div class="journey-axis"><span>2025</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/alibaba.webp" alt="Wan logo"></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi Wan</h3><p>Video generation · <small>Mentor: Ruihang Chu</small></p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/alibaba.webp" alt="Wan logo"></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi Wan</h3><p>Video generation · <small>Mentor: <a href="https://scholar.google.com/citations?hl=en&user=62zPPxkAAAAJ">Ruihang Chu</a></small></p></div></article>
     </div>
     <div class="journey-row">
       <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/zju.webp" alt="Zhejiang University logo"></div><div><span class="journey-date">Sep. 2021 – Jun. 2025</span><h3>Zhejiang University</h3><p>B.Eng. in Computer Science and Technology · <small>CAD&amp;CG Lab</small></p></div></article>
@@ -205,12 +201,12 @@ Wen Wang<sup>*</sup>, Canyu Zhao<sup>*</sup>, Hao Chen, **<u>Zhekai Chen</u>**, 
 <div class="collab-grid">
   <a class="collab-card" href="https://encounter1997.github.io/">
     <img src="images/people/encounter1997.jpg" alt="Wen Wang" loading="lazy">
-    <div><span class="collab-kicker">Research guide · first mentor</span><h3>Wen Wang</h3><p>Introduced me to visual generation research and guided my early projects.</p><div class="collab-tags"><span>FreeCompose</span><span>Framer</span><span>AutoStory</span></div></div>
+    <div><span class="collab-kicker">Research guide · senior colleague</span><h3>Wen Wang</h3><p>A senior colleague who helped me get started in visual generation research and guided my early projects.</p><div class="collab-tags"><span>FreeCompose</span><span>Framer</span><span>AutoStory</span></div></div>
     <i class="fas fa-arrow-up collab-arrow"></i>
   </a>
   <a class="collab-card" href="https://weilllllls.github.io/">
     <img src="images/people/weilllllls.jpg" alt="Yujie Wei" loading="lazy">
-    <div><span class="collab-kicker">Long-term collaborator</span><h3>Yujie Wei</h3><p>Generative models, controllable generation, and model scaling</p><div class="collab-tags"><span>TTS-VAR</span><span>Tongyi</span></div></div>
+    <div><span class="collab-kicker">Long-term collaborator</span><h3>Yujie Wei</h3><p>Generative models, controllable generation, and model scaling</p><div class="collab-tags"><span>TTS-VAR</span><span>MSAVBench</span></div></div>
     <i class="fas fa-arrow-up collab-arrow"></i>
   </a>
 </div>
@@ -221,7 +217,6 @@ Wen Wang<sup>*</sup>, Canyu Zhao<sup>*</sup>, Hao Chen, **<u>Zhekai Chen</u>**, 
 
 - *Sep. 2025*. **HKU Presidential PhD Scholar Programme (HKUPS)**.
 - *Dec. 2024*. **Ho Chi Kwan Education Scholarship**, Zhejiang University (7 recipients each year).
-- *Nov. 2024 / 2023 / 2022*. **Third Scholarship of Zhejiang University**.
 - *Oct. 2023*. **Third Prize, Sixth Open Source Innovation Competition**.
 
 # 🛎 Academic Service
