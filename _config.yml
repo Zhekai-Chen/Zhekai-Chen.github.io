@@ -4,7 +4,6 @@ description              : "Ph.D. Student at HKU · Generative Models and Multim
 url                      : "https://zhekai-chen.github.io"
 baseurl                  : ""
 repository               : "Zhekai-Chen/Zhekai-Chen.github.io"
-google_scholar_stats_use_cdn : true
 
 # Analytics and site verification (optional)
 google_analytics_id      :

@@ -34,25 +34,6 @@ I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Pre
 - *Jun. 2025*. &nbsp;🎓 I receive my B.Eng. from **Zhejiang University**.
 - *2024*. &nbsp;🎉 [**FreeCompose**](https://arxiv.org/abs/2407.04947) is published at **ECCV 2024**.
 
-# 📈 Citations
-
-<div class="citation-card">
-  <div class="citation-card__head">
-    <div class="citation-card__stats">
-      <div class="citation-card__total"><span id="total_cit">—</span><span class="citation-card__total-label">total citations</span></div>
-      <div class="citation-card__metrics">
-        <span><strong id="h_index">—</strong>&nbsp;h-index</span><span class="citation-metric-sep">·</span><span><strong id="i10_index">—</strong>&nbsp;i10-index</span>
-      </div>
-    </div>
-    <div class="citation-card__controls">
-      <div class="citation-toggle" id="citation-toggle"><button type="button" class="is-active" data-mode="total">Total</button><button type="button" data-mode="avg">Avg / paper</button></div>
-      <a class="citation-card__link" href="https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-    </div>
-  </div>
-  <div class="citation-card__chart"><canvas id="citation-chart"></canvas></div>
-  <p class="citation-card__empty" id="citation-chart-empty" hidden>Citation history will appear after the scheduled update.</p>
-</div>
-
 # 📝 Selected Publications
 
 Selected publications are listed in reverse chronological order by first public submission. Please see [Google Scholar](https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en) for the complete list. (\*: equal contribution; †: corresponding author)
