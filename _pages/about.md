@@ -25,7 +25,7 @@ I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Pre
 # 🔥 News
 
 - *Jul. 2026*. &nbsp;🤖 We release [**UniClawBench**](https://uniclawbench.github.io/#/home), a universal benchmark with 400 bilingual real-world tasks for proactive agents.
-- *2026*. &nbsp;💼 I join the **Tencent Hunyuan Qingyun Program** as a research intern.
+- *Jul. 2026*. &nbsp;💼 I join the **Tencent Hunyuan Qingyun Program** as a research intern.
 - *Mar. 2026*. &nbsp;🎨 We release [**MACRO**](https://macro400k.github.io/), featuring MacroData, a 400K structured long-context dataset for multi-reference image generation.
 - *Dec. 2025*. &nbsp;🎬 We release [**Wan-Move**](https://wan-move.github.io/), a scalable framework for precise motion-controllable video generation.
 - *Sep. 2025*. &nbsp;🎓 I start my Ph.D. in ECE at **The University of Hong Kong** and receive the **HKU Presidential PhD Scholar Programme** award.
@@ -47,22 +47,20 @@ Selected publications are listed in reverse chronological order by first public 
 
 [project](https://uniclawbench.github.io/#/home) \| [arXiv](https://arxiv.org/abs/2607.08768) \| [github](https://github.com/HKU-MMLab/UniClawBench)
 
-- A capability-driven benchmark containing 400 bilingual, real-world tasks for proactive agents.
-- Evaluates skill usage, exploration, long-context reasoning, multimodal understanding, and cross-platform coordination.
+<p class="paper-summary">A capability-driven benchmark containing 400 bilingual, real-world tasks for proactive agents. Evaluates skill usage, exploration, long-context reasoning, multimodal understanding, and cross-platform coordination.</p>
 
 </div></div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026 Submission</div><img src='images/publications/macro.webp' alt="MACRO dataset overview" width="100%" loading="lazy" decoding="async"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2026</div><img src='images/publications/macro.webp' alt="MACRO dataset overview" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**<font size=4>MACRO: Advancing Multi-Reference Image Generation with Structured Long-Context Data</font>**](https://arxiv.org/abs/2603.25319) \
-**<font color="#dd0000">Submitted to ECCV 2026</font>** \
+**<font color="#dd0000">Preprint, 2026</font>** \
 **<u>Zhekai Chen</u>**, Yuqing Wang, Manyuan Zhang†, Xihui Liu†
 
 [project](https://macro400k.github.io/) \| [arXiv](https://arxiv.org/abs/2603.25319) \| [github](https://github.com/HKU-MMLab/Macro)
 
-- Introduces MacroData, 400K structured samples with as many as ten reference images.
-- Covers customization, illustration, spatial reasoning, and temporal prediction under long multimodal context.
+<p class="paper-summary">Introduces MacroData, 400K structured samples with as many as ten reference images. Covers customization, illustration, spatial reasoning, and temporal prediction under long multimodal context.</p>
 
 </div></div>
 
@@ -75,8 +73,7 @@ Ruihang Chu\*, Yefei He\*, **<u>Zhekai Chen</u>**\*, Shiwei Zhang, Xiaogang Xu, 
 
 [project](https://wan-move.github.io/) \| [arXiv](https://arxiv.org/abs/2512.08765) \| [github](https://github.com/ali-vilab/Wan-Move)
 
-- Enables precise object and camera motion control using latent trajectory guidance.
-- Integrates motion-aware conditions into an off-the-shelf image-to-video model without architectural changes.
+<p class="paper-summary">Enables precise object and camera motion control using latent trajectory guidance. Integrates motion-aware conditions into an off-the-shelf image-to-video model without architectural changes.</p>
 
 </div></div>
 
@@ -89,8 +86,7 @@ Ruihang Chu\*, Yefei He\*, **<u>Zhekai Chen</u>**\*, Shiwei Zhang, Xiaogang Xu, 
 
 [arXiv](https://arxiv.org/abs/2507.18537) \| [github](https://github.com/ali-vilab/TTS-VAR)
 
-- The first general test-time scaling framework for visual autoregressive models.
-- Formulates generation as path search with diversity exploration and potential-based selection.
+<p class="paper-summary">The first general test-time scaling framework for visual autoregressive models. Formulates generation as path search with diversity exploration and potential-based selection.</p>
 
 </div></div>
 
@@ -103,8 +99,7 @@ Wen Wang, Qiuyu Wang, Kecheng Zheng, Hao Ouyang, **<u>Zhekai Chen</u>**, Biao Go
 
 [project](https://aim-uofa.github.io/Framer/) \| [arXiv](https://arxiv.org/abs/2410.18978) \| [github](https://github.com/aim-uofa/Framer)
 
-- Interactive frame interpolation with flexible drag-based local motion control.
-- Produces diverse transitions from the same start and end frames and supports image morphing.
+<p class="paper-summary">Interactive frame interpolation with flexible drag-based local motion control. Produces diverse transitions from the same start and end frames and supports image morphing.</p>
 
 </div></div>
 
@@ -117,8 +112,7 @@ Wen Wang, Qiuyu Wang, Kecheng Zheng, Hao Ouyang, **<u>Zhekai Chen</u>**, Biao Go
 
 [arXiv](https://arxiv.org/abs/2407.04947) \| [github](https://github.com/aim-uofa/FreeCompose)
 
-- A generic zero-shot framework for appearance and semantic image composition using diffusion priors.
-- Extends to object removal and multi-character customization without task-specific training.
+<p class="paper-summary">A generic zero-shot framework for appearance and semantic image composition using diffusion priors. Extends to object removal and multi-character customization without task-specific training.</p>
 
 </div></div>
 
@@ -131,8 +125,7 @@ Wen Wang\*, Canyu Zhao\*, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunh
 
 [project](https://aim-uofa.github.io/AutoStory/) \| [arXiv](https://arxiv.org/abs/2311.11243) \| [github](https://github.com/aim-uofa/AutoStory)
 
-- Generates text-aligned, identity-consistent storytelling images from stories and character references.
-- Uses language-model planning and dense condition generation to reduce manual control requirements.
+<p class="paper-summary">Generates text-aligned, identity-consistent storytelling images from stories and character references. Uses language-model planning and dense condition generation to reduce manual control requirements.</p>
 
 </div></div>
 
@@ -148,24 +141,24 @@ Wen Wang\*, Canyu Zhao\*, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunh
   <div class="journey-list">
     <div class="journey-row">
       <div></div><div class="journey-axis"><span>2026</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><i class="fas fa-cloud"></i></div><div><span class="journey-date">2026 – Present</span><h3>Tencent Hunyuan</h3><p>Qingyun Program · Research Intern</p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/tencent.webp" alt="Tencent logo"></div><div><span class="journey-date">Jul. 2026 – Present</span><h3>Tencent Hunyuan</h3><p>Qingyun Program · Research Intern</p></div></article>
     </div>
     <div class="journey-row">
-      <article class="journey-node journey-node--study"><div class="journey-icon"><i class="fas fa-university"></i></div><div><span class="journey-date">Sep. 2025 – Present</span><h3>The University of Hong Kong</h3><p>Ph.D. in Electrical and Computer Engineering · HKU MMLab</p></div></article>
+      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/hku.webp" alt="HKU logo"></div><div><span class="journey-date">Sep. 2025 – Present</span><h3>The University of Hong Kong</h3><p>Ph.D. in Electrical and Computer Engineering · HKU MMLab</p></div></article>
       <div class="journey-axis"><span>2025</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><i class="fas fa-utensils"></i></div><div><span class="journey-date">Nov. 2025 – 2026</span><h3>Meituan</h3><p>Research Intern · Unified multimodal models<br><small>Collaborated with Manyuan Zhang</small></p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/meituan.webp" alt="Meituan logo"></div><div><span class="journey-date">Nov. 2025 – 2026</span><h3>Meituan</h3><p>Research Intern · Unified multimodal models · <small>with Manyuan Zhang</small></p></div></article>
     </div>
     <div class="journey-row">
-      <article class="journey-node journey-node--study"><div class="journey-icon"><i class="fas fa-graduation-cap"></i></div><div><span class="journey-date">Sep. 2021 – Jun. 2025</span><h3>Zhejiang University</h3><p>B.Eng. · Computer Science and Technology<br><small>Research at the State Key Laboratory of CAD&CG</small></p></div></article>
+      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/zju.webp" alt="Zhejiang University logo"></div><div><span class="journey-date">Sep. 2021 – Jun. 2025</span><h3>Zhejiang University</h3><p>B.Eng. in Computer Science and Technology · <small>CAD&CG Lab</small></p></div></article>
       <div class="journey-axis"><span>2024</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><i class="fas fa-cubes"></i></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi Laboratory</h3><p>Research Intern · Visual generation<br><small>Collaborated with Ruihang Chu and Yujie Wei</small></p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/alibaba.webp" alt="Alibaba logo"></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi</h3><p>Research Intern · Visual generation · <small>with Ruihang Chu and Yujie Wei</small></p></div></article>
     </div>
     <div class="journey-row">
       <div></div><div class="journey-axis"><span>2024</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><i class="fas fa-flask"></i></div><div><span class="journey-date">May – Sep. 2024</span><h3>University of Illinois Urbana-Champaign</h3><p>Research Intern · Prof. Tong Zhang's group</p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/uiuc.webp" alt="University of Illinois logo"></div><div><span class="journey-date">May – Sep. 2024</span><h3>UIUC</h3><p>Research Intern · Prof. Tong Zhang's group</p></div></article>
     </div>
     <div class="journey-row journey-older">
-      <article class="journey-node journey-node--study"><div class="journey-icon"><i class="fas fa-school"></i></div><div><span class="journey-date">Sep. 2018 – Jun. 2021</span><h3>Suzhou Academy</h3><p>High School · Key Class</p></div></article>
+      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/suzhou.webp" alt="Suzhou Academy logo"></div><div><span class="journey-date">Sep. 2018 – Jun. 2021</span><h3>Suzhou Academy</h3><p>High School · Key Class</p></div></article>
       <div class="journey-axis"><span>2021</span></div><div></div>
     </div>
   </div>
