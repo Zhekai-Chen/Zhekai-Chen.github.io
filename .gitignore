@@ -4,3 +4,5 @@ push.sh
 .bundle/
 /vendor/
 Gemfile.lock
+
+/assets/js/vendor/
