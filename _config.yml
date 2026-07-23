@@ -1,56 +1,118 @@
-# Basic Information 
-title: Zhekai Chen
-position: Undergraduate Student
-affiliation: Zhejiang University
-email: zkchen66@outlook.com
+# Site settings
+title                    : "Zhekai Chen"
+description              : "Ph.D. Student at HKU · Generative Models and Multimodal Intelligence"
+url                      : "https://zhekai-chen.github.io"
+baseurl                  : ""
+repository               : "Zhekai-Chen/Zhekai-Chen.github.io"
+google_scholar_stats_use_cdn : true
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+# Analytics and site verification (optional)
+google_analytics_id      :
+google_site_verification :
+bing_site_verification   :
+baidu_site_verification  :
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=zh-CN
-cv_link: assets/files/Resume.pdf
-github_link: https://github.com/Zhekai-Chen
-linkedin: https://www.linkedin.com/in/%E5%93%B2%E6%81%BA-%E9%99%88-7352b827a/
-twitter: https://x.com/ChenZhekai3003
+# Site author
+author:
+  name             : "Zhekai Chen"
+  avatar           : "images/bio.png"
+  bio              : "Ph.D. Student @ HKU"
+  location         : "Hong Kong · Hangzhou"
+  employer         : "The University of Hong Kong"
+  email            : "zkchen66@outlook.com"
+  googlescholar    : "https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en"
+  github           : "Zhekai-Chen"
+  linkedin         : "%E5%93%B2%E6%81%BA-%E9%99%88-7352b827a"
+  twitter          : "ChenZhekai3003"
+  uri              :
+  researchgate     :
+  dblp             :
+  orcid            :
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
-
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
-
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-# google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
-
-# The following files will be removed from the generated website.
+# Reading files
+include:
+  - .htaccess
+  - _pages
+  - resume
 exclude:
+  - docs
+  - google_scholar_crawler
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .github
+  - CHANGELOG
+  - Capfile
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
-  - LICENSE
-  - minimal-light.gemspec
+  - Gruntfile.js
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Output
+permalink: /:categories/:title/
+timezone: Asia/Hong_Kong
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,0 +1,64 @@
+<script>
+(function () {
+  function dataBaseUrl() {
+    {% if site.google_scholar_stats_use_cdn %}
+    return 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/';
+    {% else %}
+    return 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/';
+    {% endif %}
+  }
+
+  function renderChart(history) {
+    var canvas = document.getElementById('citation-chart');
+    var empty = document.getElementById('citation-chart-empty');
+    if (!canvas || !window.Chart || !history || history.length < 2) {
+      if (canvas) canvas.parentElement.style.display = 'none';
+      if (empty) empty.hidden = false;
+      return;
+    }
+    var labels = history.map(function (item) { return item.date; });
+    var values = history.map(function (item) { return item.citations; });
+    var chart = new Chart(canvas, {
+      type: 'line',
+      data: { labels: labels, datasets: [{ data: values, borderColor: '#1452cc', backgroundColor: 'rgba(20,82,204,.09)', fill: true, tension: .28, pointRadius: history.length > 20 ? 0 : 2 }] },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false }, ticks: { maxTicksLimit: 6 } }, y: { beginAtZero: false, ticks: { precision: 0 } } } }
+    });
+    var buttons = document.querySelectorAll('#citation-toggle button');
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.classList.remove('is-active'); });
+        button.classList.add('is-active');
+        var series = values;
+        if (button.dataset.mode === 'avg') {
+          var start = values[0] || 1;
+          series = values.map(function (value, index) { return index ? ((value - start) / index).toFixed(1) : 0; });
+        }
+        chart.data.datasets[0].data = series;
+        chart.update();
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var base = dataBaseUrl();
+    fetch(base + 'gs_data.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (data) {
+      var total = document.getElementById('total_cit');
+      var h = document.getElementById('h_index');
+      var i10 = document.getElementById('i10_index');
+      if (total) total.textContent = data.citedby;
+      if (h) h.textContent = data.hindex;
+      if (i10) i10.textContent = data.i10index;
+    }).catch(function () {});
+
+    fetch(base + 'gs_data_history.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (data) {
+      var history = Array.isArray(data) ? data : data.history;
+      var waitForChart = function (attempt) {
+        if (window.Chart) return renderChart(history);
+        if (attempt < 20) setTimeout(function () { waitForChart(attempt + 1); }, 150);
+        else renderChart(null);
+      };
+      waitForChart(0);
+    }).catch(function () { renderChart(null); });
+  });
+})();
+</script>
