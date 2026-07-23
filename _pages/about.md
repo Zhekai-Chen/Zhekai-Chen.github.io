@@ -14,7 +14,7 @@ I am a Ph.D. student in **Electrical and Computer Engineering** at **The Univers
 
 My research interests lie in **generative models**, **unified multimodal models**, and **agents**. I am particularly interested in scalable visual generation, long-context multimodal learning, and generalist agents that can perceive, reason, and act in real-world environments.
 
-I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Previously, I worked with research teams at **Meituan**, **Alibaba Tongyi Laboratory**, and **UIUC**.
+I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Previously, I worked at **Meituan** with **Manyuan Zhang** as my mentor, and at **Alibaba Tongyi Wan**, where **Ruihang Chu** mentored me on video generation research.
 
 <div class="profile-actions">
   <a class="profile-action" href="resume/Zhekai_Chen_CV.pdf"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
@@ -34,16 +34,41 @@ I am currently a research intern in the **Tencent Hunyuan Qingyun Program**. Pre
 - *Jun. 2025*. &nbsp;🎓 I receive my B.Eng. from **Zhejiang University**.
 - *2024*. &nbsp;🎉 [**FreeCompose**](https://arxiv.org/abs/2407.04947) is published at **ECCV 2024**.
 
+# 📈 Citations
+
+<div class="citation-card">
+  <div class="citation-card__head">
+    <div class="citation-card__stats">
+      <div class="citation-card__total"><span id="total_cit">—</span><span class="citation-card__total-label">total citations</span></div>
+      <div class="citation-card__metrics">
+        <span><strong id="h_index">—</strong>&nbsp;h-index</span>
+        <span class="citation-metric-sep">·</span>
+        <span><strong id="i10_index">—</strong>&nbsp;i10-index</span>
+      </div>
+    </div>
+    <div class="citation-card__controls">
+      <div class="citation-toggle" id="citation-toggle">
+        <button type="button" class="is-active" data-mode="total">Total</button>
+        <button type="button" data-mode="avg">Avg / paper</button>
+      </div>
+      <a class="citation-card__link" href="https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+    </div>
+  </div>
+  <div class="citation-card__chart"><canvas id="citation-chart"></canvas></div>
+  <p class="citation-card__updated">Updated from Google Scholar · <span id="citation_updated">July 23, 2026</span></p>
+  <p class="citation-card__empty" id="citation-chart-empty" hidden>Citation data is temporarily unavailable.</p>
+</div>
+
 # 📝 Selected Publications
 
-Selected publications are listed in reverse chronological order by first public submission. Please see [Google Scholar](https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en) for the complete list. (\*: equal contribution; †: corresponding author)
+Selected publications are listed in reverse chronological order by first public submission. Please see [Google Scholar](https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en) for the complete list. <span class="author-note">* equal contribution &nbsp;·&nbsp; † corresponding author &nbsp;·&nbsp; ‡ project lead</span>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2026</div><img src='images/publications/uniclawbench.webp' alt="UniClawBench overview" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [**<font size=4>UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks</font>**](https://arxiv.org/abs/2607.08768) \
 **<font color="#dd0000">Preprint, 2026</font>** \
-**<u>Zhekai Chen</u>**\*, Chengqi Duan\*, Kaiyue Sun\*, Bohao Li, Yuqing Wang, Manyuan Zhang†, Xihui Liu†
+**<u>Zhekai Chen</u>**<sup>*</sup>, Chengqi Duan<sup>*</sup>, Kaiyue Sun<sup>*</sup>, Bohao Li, Yuqing Wang, Manyuan Zhang<sup>†</sup>, Xihui Liu<sup>†</sup>
 
 [project](https://uniclawbench.github.io/#/home) \| [arXiv](https://arxiv.org/abs/2607.08768) \| [github](https://github.com/HKU-MMLab/UniClawBench)
 
@@ -56,7 +81,7 @@ Selected publications are listed in reverse chronological order by first public 
 
 [**<font size=4>MACRO: Advancing Multi-Reference Image Generation with Structured Long-Context Data</font>**](https://arxiv.org/abs/2603.25319) \
 **<font color="#dd0000">Preprint, 2026</font>** \
-**<u>Zhekai Chen</u>**, Yuqing Wang, Manyuan Zhang†, Xihui Liu†
+**<u>Zhekai Chen</u>**, Yuqing Wang, Manyuan Zhang<sup>†</sup>, Xihui Liu<sup>†</sup>
 
 [project](https://macro400k.github.io/) \| [arXiv](https://arxiv.org/abs/2603.25319) \| [github](https://github.com/HKU-MMLab/Macro)
 
@@ -69,7 +94,7 @@ Selected publications are listed in reverse chronological order by first public 
 
 [**<font size=4>Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance</font>**](https://arxiv.org/abs/2512.08765) \
 **<font color="#dd0000">NeurIPS 2025</font>** \
-Ruihang Chu\*, Yefei He\*, **<u>Zhekai Chen</u>**\*, Shiwei Zhang, Xiaogang Xu, Bin Xia, Dingdong Wang, Hongwei Yi, Xihui Liu, Hengshuang Zhao, Yu Liu, Yingya Zhang, Yujiu Yang
+Ruihang Chu<sup>*†‡</sup>, Yefei He<sup>*</sup>, **<u>Zhekai Chen</u>**<sup>*</sup>, Shiwei Zhang<sup>†</sup>, Xiaogang Xu, Bin Xia, Dingdong Wang, Hongwei Yi, Xihui Liu, Hengshuang Zhao, Yu Liu, Yingya Zhang, Yujiu Yang<sup>†</sup>
 
 [project](https://wan-move.github.io/) \| [arXiv](https://arxiv.org/abs/2512.08765) \| [github](https://github.com/ali-vilab/Wan-Move)
 
@@ -82,7 +107,7 @@ Ruihang Chu\*, Yefei He\*, **<u>Zhekai Chen</u>**\*, Shiwei Zhang, Xiaogang Xu, 
 
 [**<font size=4>TTS-VAR: A Test-Time Scaling Framework for Visual Auto-Regressive Generation</font>**](https://arxiv.org/abs/2507.18537) \
 **<font color="#dd0000">NeurIPS 2025</font>** \
-**<u>Zhekai Chen</u>**, Ruihang Chu\*, Yukang Chen, Shiwei Zhang, Yujie Wei, Yingya Zhang, Xihui Liu\*
+**<u>Zhekai Chen</u>**, Ruihang Chu<sup>†</sup>, Yukang Chen, Shiwei Zhang, Yujie Wei, Yingya Zhang, Xihui Liu<sup>†</sup>
 
 [arXiv](https://arxiv.org/abs/2507.18537) \| [github](https://github.com/ali-vilab/TTS-VAR)
 
@@ -108,7 +133,7 @@ Wen Wang, Qiuyu Wang, Kecheng Zheng, Hao Ouyang, **<u>Zhekai Chen</u>**, Biao Go
 
 [**<font size=4>FreeCompose: Generic Zero-Shot Image Composition with Diffusion Prior</font>**](https://arxiv.org/abs/2407.04947) \
 **<font color="#dd0000">ECCV 2024</font>** \
-**<u>Zhekai Chen</u>**\*, Wen Wang\*, Zhen Yang, Zeqing Yuan, Hao Chen, Chunhua Shen
+**<u>Zhekai Chen</u>**<sup>*</sup>, Wen Wang<sup>*</sup>, Zhen Yang, Zeqing Yuan, Hao Chen<sup>†</sup>, Chunhua Shen<sup>†</sup>
 
 [arXiv](https://arxiv.org/abs/2407.04947) \| [github](https://github.com/aim-uofa/FreeCompose)
 
@@ -121,13 +146,22 @@ Wen Wang, Qiuyu Wang, Kecheng Zheng, Hao Ouyang, **<u>Zhekai Chen</u>**, Biao Go
 
 [**<font size=4>AutoStory: Generating Diverse Storytelling Images with Minimal Human Effort</font>**](https://arxiv.org/abs/2311.11243) \
 **<font color="#dd0000">International Journal of Computer Vision</font>** \
-Wen Wang\*, Canyu Zhao\*, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunhua Shen
+Wen Wang<sup>*</sup>, Canyu Zhao<sup>*</sup>, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunhua Shen
 
 [project](https://aim-uofa.github.io/AutoStory/) \| [arXiv](https://arxiv.org/abs/2311.11243) \| [github](https://github.com/aim-uofa/AutoStory)
 
 <p class="paper-summary">Generates text-aligned, identity-consistent storytelling images from stories and character references. Uses language-model planning and dense condition generation to reduce manual control requirements.</p>
 
 </div></div>
+
+<div class="other-work-row" aria-label="Other publications">
+  <span class="other-work-label">Other work</span>
+  <a href="https://arxiv.org/abs/2406.07502">Image Textualization <small>NeurIPS D&amp;B 2024</small></a>
+  <span>Routing Matters in MoE <small>ICLR 2026</small></span>
+  <span>Speculative Jacobi-Denoising <small>NeurIPS 2025</small></span>
+  <span>DreamVideo-Omni <small>Preprint</small></span>
+  <span>MSAVBench <small>Preprint</small></span>
+</div>
 
 # 🧭 Journey
 
@@ -140,22 +174,24 @@ Wen Wang\*, Canyu Zhao\*, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunh
 
   <div class="journey-list">
     <div class="journey-row">
+      <div></div><div class="journey-axis"><span>Now</span></div>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/tencent.webp" alt="Tencent Hunyuan logo"></div><div><span class="journey-date">Jul. 2026 – Present</span><h3>Tencent Hunyuan</h3><p>Qingyun Program · Research Intern</p></div></article>
+    </div>
+    <div class="journey-row">
+      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/hku.webp" alt="HKU logo"></div><div><span class="journey-date">Sep. 2025 – Present</span><h3>The University of Hong Kong</h3><p>Ph.D. in ECE · HKU MMLab</p></div></article>
+      <div class="journey-axis"><span>Now</span></div><div></div>
+    </div>
+    <div class="journey-row">
       <div></div><div class="journey-axis"><span>2026</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/tencent.webp" alt="Tencent logo"></div><div><span class="journey-date">Jul. 2026 – Present</span><h3>Tencent Hunyuan</h3><p>Qingyun Program · Research Intern</p></div></article>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/meituan.webp" alt="Meituan logo"></div><div><span class="journey-date">Nov. 2025 – Jun. 2026</span><h3>Meituan</h3><p>Unified multimodal models · <small>Mentor: Manyuan Zhang</small></p></div></article>
     </div>
     <div class="journey-row">
-      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/hku.webp" alt="HKU logo"></div><div><span class="journey-date">Sep. 2025 – Present</span><h3>The University of Hong Kong</h3><p>Ph.D. in Electrical and Computer Engineering · HKU MMLab</p></div></article>
-      <div class="journey-axis"><span>2025</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/meituan.webp" alt="Meituan logo"></div><div><span class="journey-date">Nov. 2025 – 2026</span><h3>Meituan</h3><p>Research Intern · Unified multimodal models · <small>with Manyuan Zhang</small></p></div></article>
+      <div></div><div class="journey-axis"><span>2025</span></div>
+      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/alibaba.webp" alt="Wan logo"></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi Wan</h3><p>Video generation · <small>Mentor: Ruihang Chu</small></p></div></article>
     </div>
     <div class="journey-row">
-      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/zju.webp" alt="Zhejiang University logo"></div><div><span class="journey-date">Sep. 2021 – Jun. 2025</span><h3>Zhejiang University</h3><p>B.Eng. in Computer Science and Technology · <small>CAD&CG Lab</small></p></div></article>
-      <div class="journey-axis"><span>2024</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/alibaba.webp" alt="Alibaba logo"></div><div><span class="journey-date">Nov. 2024 – Aug. 2025</span><h3>Alibaba Tongyi</h3><p>Research Intern · Visual generation · <small>with Ruihang Chu and Yujie Wei</small></p></div></article>
-    </div>
-    <div class="journey-row">
-      <div></div><div class="journey-axis"><span>2024</span></div>
-      <article class="journey-node journey-node--work"><div class="journey-icon"><img src="images/organizations/uiuc.webp" alt="University of Illinois logo"></div><div><span class="journey-date">May – Sep. 2024</span><h3>UIUC</h3><p>Research Intern · Prof. Tong Zhang's group</p></div></article>
+      <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/zju.webp" alt="Zhejiang University logo"></div><div><span class="journey-date">Sep. 2021 – Jun. 2025</span><h3>Zhejiang University</h3><p>B.Eng. in Computer Science and Technology · <small>CAD&amp;CG Lab</small></p></div></article>
+      <div class="journey-axis"><span>2025</span></div><div></div>
     </div>
     <div class="journey-row journey-older">
       <article class="journey-node journey-node--study"><div class="journey-icon"><img src="images/organizations/suzhou.webp" alt="Suzhou Academy logo"></div><div><span class="journey-date">Sep. 2018 – Jun. 2021</span><h3>Suzhou Academy</h3><p>High School · Key Class</p></div></article>
@@ -164,18 +200,17 @@ Wen Wang\*, Canyu Zhao\*, Hao Chen, **<u>Zhekai Chen</u>**, Kecheng Zheng, Chunh
   </div>
   <button class="journey-toggle" type="button">Show full journey <span>⌄</span></button>
 </div>
-
 # 🤝 Collaborations
 
 <div class="collab-grid">
   <a class="collab-card" href="https://encounter1997.github.io/">
     <img src="images/people/encounter1997.jpg" alt="Wen Wang" loading="lazy">
-    <div><span class="collab-kicker">Long-term collaborator</span><h3>Wen Wang</h3><p>Visual generation and interactive content creation</p><div class="collab-tags"><span>FreeCompose</span><span>Framer</span><span>AutoStory</span></div></div>
+    <div><span class="collab-kicker">Research guide · first mentor</span><h3>Wen Wang</h3><p>Introduced me to visual generation research and guided my early projects.</p><div class="collab-tags"><span>FreeCompose</span><span>Framer</span><span>AutoStory</span></div></div>
     <i class="fas fa-arrow-up collab-arrow"></i>
   </a>
   <a class="collab-card" href="https://weilllllls.github.io/">
     <img src="images/people/weilllllls.jpg" alt="Yujie Wei" loading="lazy">
-    <div><span class="collab-kicker">Research collaborator</span><h3>Yujie Wei</h3><p>Generative models, controllable generation, and model scaling</p><div class="collab-tags"><span>TTS-VAR</span><span>Tongyi</span></div></div>
+    <div><span class="collab-kicker">Long-term collaborator</span><h3>Yujie Wei</h3><p>Generative models, controllable generation, and model scaling</p><div class="collab-tags"><span>TTS-VAR</span><span>Tongyi</span></div></div>
     <i class="fas fa-arrow-up collab-arrow"></i>
   </a>
 </div>

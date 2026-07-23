@@ -1,64 +1,93 @@
 <script>
-(function () {
-  function dataBaseUrl() {
-    {% if site.google_scholar_stats_use_cdn %}
-    return 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/';
-    {% else %}
-    return 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/';
-    {% endif %}
-  }
+document.addEventListener('DOMContentLoaded', function () {
+  var canvas = document.getElementById('citation-chart');
+  if (!canvas) return;
 
-  function renderChart(history) {
-    var canvas = document.getElementById('citation-chart');
-    var empty = document.getElementById('citation-chart-empty');
-    if (!canvas || !window.Chart || !history || history.length < 2) {
-      if (canvas) canvas.parentElement.style.display = 'none';
-      if (empty) empty.hidden = false;
-      return;
+  {% if site.google_scholar_stats_use_cdn %}
+  var url = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json';
+  {% else %}
+  var url = 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json';
+  {% endif %}
+
+  var fallback = {
+    citedby: 232,
+    hindex: 7,
+    i10index: 7,
+    cites_per_year: {"2024": 10, "2025": 102, "2026": 120},
+    updated: "2026-07-23",
+    publications: {
+      "framer": {"bib":{"pub_year":"2025"}},
+      "image-textualization": {"bib":{"pub_year":"2024"}},
+      "autostory": {"bib":{"pub_year":"2025"}},
+      "wan-move": {"bib":{"pub_year":"2025"}},
+      "freecompose": {"bib":{"pub_year":"2024"}},
+      "routing-moe": {"bib":{"pub_year":"2025"}},
+      "tts-var": {"bib":{"pub_year":"2025"}},
+      "jacobi": {"bib":{"pub_year":"2025"}},
+      "dreamvideo": {"bib":{"pub_year":"2026"}},
+      "macro": {"bib":{"pub_year":"2026"}},
+      "uniclawbench": {"bib":{"pub_year":"2026"}},
+      "msavbench": {"bib":{"pub_year":"2026"}}
     }
-    var labels = history.map(function (item) { return item.date; });
-    var values = history.map(function (item) { return item.citations; });
-    var chart = new Chart(canvas, {
-      type: 'line',
-      data: { labels: labels, datasets: [{ data: values, borderColor: '#1452cc', backgroundColor: 'rgba(20,82,204,.09)', fill: true, tension: .28, pointRadius: history.length > 20 ? 0 : 2 }] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false }, ticks: { maxTicksLimit: 6 } }, y: { beginAtZero: false, ticks: { precision: 0 } } } }
+  };
+
+  function buildSeries(cpy, total, pubs) {
+    var years = Object.keys(cpy || {}).map(Number).filter(function (y) { return !isNaN(y); }).sort(function (a,b) { return a-b; });
+    if (!years.length) return null;
+    var now = new Date(), currentYear = now.getFullYear(), currentMonth = now.getMonth() + 1;
+    var startYear = years[0];
+    if (currentYear < startYear) currentYear = startYear;
+    var previous = 0;
+    for (var y=startYear; y<currentYear; y++) previous += +(cpy[y] || 0);
+    var currentCount = Math.max(0, (typeof total === 'number' ? total - previous : +(cpy[currentYear] || 0)));
+    var papersByYear = {};
+    Object.keys(pubs || {}).forEach(function (key) {
+      var year = parseInt(pubs[key] && pubs[key].bib && pubs[key].bib.pub_year, 10);
+      if (year) papersByYear[year] = (papersByYear[year] || 0) + 1;
     });
-    var buttons = document.querySelectorAll('#citation-toggle button');
-    buttons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        buttons.forEach(function (b) { b.classList.remove('is-active'); });
-        button.classList.add('is-active');
-        var series = values;
-        if (button.dataset.mode === 'avg') {
-          var start = values[0] || 1;
-          series = values.map(function (value, index) { return index ? ((value - start) / index).toFixed(1) : 0; });
-        }
-        chart.data.datasets[0].data = series;
-        chart.update();
-      });
+    function papersThrough(year) {
+      var count=0; Object.keys(papersByYear).forEach(function (p) { if (+p <= year) count += papersByYear[p]; }); return count;
+    }
+    var labels=[], cite=[], avg=[], cumulative=0;
+    for (var yr=startYear; yr<=currentYear; yr++) {
+      var count = yr < currentYear ? +(cpy[yr] || 0) : currentCount;
+      var months = yr < currentYear ? 12 : currentMonth;
+      var papers = papersThrough(yr);
+      for (var m=1; m<=months; m++) {
+        var fraction = yr < currentYear ? m/12 : m/currentMonth;
+        var value = cumulative + count*fraction;
+        labels.push(yr + '-' + (m<10?'0':'') + m);
+        cite.push(Math.round(value));
+        avg.push(papers ? Math.round(value/papers*10)/10 : 0);
+      }
+      cumulative += count;
+    }
+    return {labels:labels,cite:cite,avg:avg};
+  }
+
+  function render(data) {
+    document.getElementById('total_cit').textContent = data.citedby;
+    document.getElementById('h_index').textContent = data.hindex;
+    document.getElementById('i10_index').textContent = data.i10index;
+    var updated = document.getElementById('citation_updated');
+    if (updated && data.updated) {
+      var date = new Date(data.updated); updated.textContent = isNaN(date) ? data.updated : date.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+    }
+    var series = buildSeries(data.cites_per_year, data.citedby, data.publications);
+    if (!series || typeof Chart === 'undefined') return;
+    var ctx=canvas.getContext('2d'), grad=ctx.createLinearGradient(0,0,0,240);
+    grad.addColorStop(0,'rgba(20,82,204,.30)'); grad.addColorStop(1,'rgba(20,82,204,0)');
+    var mode='total';
+    var chart=new Chart(ctx,{type:'line',data:{labels:series.labels,datasets:[{data:series.cite,borderColor:'#1452cc',backgroundColor:grad,fill:true,tension:.3,borderWidth:2.5,pointRadius:0,pointHoverRadius:5}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{maxTicksLimit:8,color:'#6b7480',font:{size:11}}},y:{beginAtZero:true,grace:'6%',grid:{color:'rgba(16,24,40,.06)'},ticks:{color:'#6b7480',precision:0,font:{size:11}}}}}});
+    var toggle=document.getElementById('citation-toggle');
+    if (toggle) toggle.addEventListener('click',function(e){
+      var button=e.target.closest('button[data-mode]'); if(!button) return;
+      mode=button.dataset.mode;
+      chart.data.datasets[0].data=mode==='avg'?series.avg:series.cite; chart.update();
+      toggle.querySelectorAll('button').forEach(function(b){b.classList.toggle('is-active',b===button);});
     });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var base = dataBaseUrl();
-    fetch(base + 'gs_data.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (data) {
-      var total = document.getElementById('total_cit');
-      var h = document.getElementById('h_index');
-      var i10 = document.getElementById('i10_index');
-      if (total) total.textContent = data.citedby;
-      if (h) h.textContent = data.hindex;
-      if (i10) i10.textContent = data.i10index;
-    }).catch(function () {});
-
-    fetch(base + 'gs_data_history.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (data) {
-      var history = Array.isArray(data) ? data : data.history;
-      var waitForChart = function (attempt) {
-        if (window.Chart) return renderChart(history);
-        if (attempt < 20) setTimeout(function () { waitForChart(attempt + 1); }, 150);
-        else renderChart(null);
-      };
-      waitForChart(0);
-    }).catch(function () { renderChart(null); });
-  });
-})();
+  fetch(url,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error();return r.json();}).then(render).catch(function(){render(fallback);});
+});
 </script>

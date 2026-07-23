@@ -3,6 +3,8 @@ main:
     url: "/#about-me"
   - title: "News"
     url: "/#-news"
+  - title: "Citations"
+    url: "/#-citations"
   - title: "Publications"
     url: "/#-selected-publications"
   - title: "Journey"

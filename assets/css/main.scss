@@ -905,3 +905,84 @@ html {
     .journey-node--work .journey-icon { width: 34px; height: 34px; flex-basis: 34px; padding: 3px; }
     .paper-box .paper-summary { font-size: .86em; }
 }
+
+/* Sidebar information hierarchy: identity → research → location → links. */
+.author__bio {
+    display: block !important;
+    margin: .4rem 0 .28rem !important;
+    padding: 0 !important;
+    color: var(--ink) !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    font-size: .88rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35;
+}
+.author__research {
+    margin: 0;
+    color: var(--muted);
+    font-size: .76rem;
+    line-height: 1.45;
+}
+.author__meta { margin-top: .72rem; padding-top: .72rem; }
+.author__icon-stack { margin-top: .75rem; }
+.author__icon-row { margin-top: 0; }
+.author__icon-row + .author__icon-row { margin-top: .5rem; }
+.author__icon-row--academic a { background: #eef3ff; color: var(--accent-dark); }
+
+.author-note {
+    display: inline-block;
+    margin-left: .25rem;
+    color: #7a828f;
+    font-size: .78rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.paper-box-text sup {
+    color: #7a828f;
+    font-size: .7em;
+    font-weight: 700;
+    margin-left: .06em;
+}
+.other-work-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+    align-items: center;
+    margin: .8rem 0 1.2rem;
+}
+.other-work-row > span,
+.other-work-row > a {
+    padding: .4rem .6rem;
+    border: 1px solid var(--hairline);
+    border-radius: 9px;
+    background: #fafbfe;
+    color: #4d5664;
+    font-size: .76rem;
+    font-weight: 650;
+    line-height: 1.25;
+    background-image: none !important;
+}
+.other-work-row .other-work-label {
+    border-color: transparent;
+    padding-left: 0;
+    background: transparent;
+    color: var(--ink);
+    font-weight: 800;
+}
+.other-work-row small { display: block; margin-top: .13rem; color: #8a919c; font-size: .68rem; font-weight: 600; }
+.citation-card__updated { margin: .5rem 0 0; color: #949aa4; font-size: .7rem; text-align: right; }
+
+/* Balance the perceived size of mixed institutional marks. */
+.journey-icon,
+.journey-node--work .journey-icon {
+    flex-basis: 54px;
+    width: 54px;
+    height: 54px;
+    padding: 3px;
+}
+.journey-icon img { border-radius: 10px; }
+@media (max-width: 760px) {
+    .journey-icon,
+    .journey-node--work .journey-icon { width: 42px; height: 42px; flex-basis: 42px; }
+}

@@ -1,9 +1,10 @@
 # Site settings
 title                    : "Zhekai Chen"
-description              : "Ph.D. Student at HKU · Generative Models and Multimodal Intelligence"
+description              : "Generative Models · Unified Multimodal Models · Agents"
 url                      : "https://zhekai-chen.github.io"
 baseurl                  : ""
 repository               : "Zhekai-Chen/Zhekai-Chen.github.io"
+google_scholar_stats_use_cdn : true
 
 # Analytics and site verification (optional)
 google_analytics_id      :
@@ -22,6 +23,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=_eZWcIMAAAAJ&hl=en"
   github           : "Zhekai-Chen"
   twitter          : "ChenZhekai3003"
+  cv               : "/resume/Zhekai_Chen_CV.pdf"
   uri              :
   researchgate     :
   dblp             :

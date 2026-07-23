@@ -12,27 +12,24 @@
   <div class="author__content">
     <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if site.description %}<p class="author__research">{{ site.description }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <div class="author__meta">
-      {% if site.description %}<p class="author__tagline">{{ site.description }}</p>{% endif %}
       {% if author.location %}<p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>{{ author.location }}</p>{% endif %}
     </div>
 
-    <div class="author__icon-row" aria-label="Contact and profile links">
-      {% if author.email %}
-        <a href="mailto:{{ author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.googlescholar %}
-        <a href="{{ author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.github %}
-        <a href="https://github.com/{{ author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.twitter %}
-        <a href="https://x.com/{{ author.twitter }}" aria-label="X" title="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-      {% endif %}
+    <div class="author__icon-stack" aria-label="Contact and profile links">
+      <div class="author__icon-row author__icon-row--primary">
+        {% if author.email %}<a href="mailto:{{ author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>{% endif %}
+        {% if author.github %}<a href="https://github.com/{{ author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>{% endif %}
+        {% if author.twitter %}<a href="https://x.com/{{ author.twitter }}" aria-label="X" title="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>{% endif %}
+      </div>
+      <div class="author__icon-row author__icon-row--academic">
+        {% if author.cv %}<a href="{{ author.cv | relative_url }}" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fas fa-file-alt" aria-hidden="true"></i></a>{% endif %}
+        {% if author.googlescholar %}<a href="{{ author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>{% endif %}
+      </div>
     </div>
   </div>
 </div>
