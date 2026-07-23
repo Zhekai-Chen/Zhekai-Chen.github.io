@@ -1,0 +1,22 @@
+{
+  "name": "Zhekai Chen",
+  "citedby": 232,
+  "hindex": 7,
+  "i10index": 7,
+  "cites_per_year": {"2024": 10, "2025": 102, "2026": 120},
+  "updated": "2026-07-23",
+  "publications": {
+    "framer": {"bib": {"title": "Framer: Interactive Frame Interpolation", "pub_year": "2025"}, "num_citations": 55},
+    "image-textualization": {"bib": {"title": "Image Textualization", "pub_year": "2024"}, "num_citations": 51},
+    "autostory": {"bib": {"title": "AutoStory", "pub_year": "2025"}, "num_citations": 42},
+    "wan-move": {"bib": {"title": "Wan-Move", "pub_year": "2025"}, "num_citations": 28},
+    "freecompose": {"bib": {"title": "FreeCompose", "pub_year": "2024"}, "num_citations": 19},
+    "routing-moe": {"bib": {"title": "Routing Matters in MoE", "pub_year": "2025"}, "num_citations": 17},
+    "tts-var": {"bib": {"title": "TTS-VAR", "pub_year": "2025"}, "num_citations": 12},
+    "jacobi": {"bib": {"title": "Speculative Jacobi-Denoising", "pub_year": "2025"}, "num_citations": 4},
+    "dreamvideo": {"bib": {"title": "DreamVideo-Omni", "pub_year": "2026"}, "num_citations": 3},
+    "macro": {"bib": {"title": "MACRO", "pub_year": "2026"}, "num_citations": 1},
+    "uniclawbench": {"bib": {"title": "UniClawBench", "pub_year": "2026"}, "num_citations": 0},
+    "msavbench": {"bib": {"title": "MSAVBench", "pub_year": "2026"}, "num_citations": 0}
+  }
+}
