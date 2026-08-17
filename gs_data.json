@@ -1,14 +1,14 @@
 {
   "name": "Zhekai Chen",
-  "citedby": 232,
+  "citedby": 252,
   "hindex": 7,
   "i10index": 7,
   "cites_per_year": {
-    "2024": 10,
-    "2025": 102,
-    "2026": 120
+    "2024": 8,
+    "2025": 107,
+    "2026": 136
   },
-  "updated": "2026-07-23",
+  "updated": "2026-08-17",
   "publications": {
     "framer": {
       "bib": {
